@@ -24,3 +24,6 @@ run;
 proc print data=FreqCount noobs;
    title2 'Output Data Set from PROC FREQ';
 run;
+proc means data=Color:
+var hair*count;
+run; 
